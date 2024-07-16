@@ -14,3 +14,7 @@ $1/1024,$2}';echo "Largest Files:"; nice -n 19 find $FS -mount -type f -ls \
 2>/dev/null| sort -rnk7| head -n $NUMRESULTS|awk '{printf "%d MB\t%s\n",\
 ($7/1024)/1024,$NF}'
 
+#A new line of a greate piece of code on which to be collaborated
+for i in file{1..10}; do dd if=/dev/zero of=/<pathdir>/$i bs=1G count=2; done
+
+
